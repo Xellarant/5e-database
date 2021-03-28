@@ -16,7 +16,15 @@ First you need to make sure you have [MongoDB installed locally.](https://docs.m
 
 You can load this data locally by running:
 ```
-MONGODB_URI=mongodb://localhost/5e-database npm run db:refresh
+(On Apple or Linux:)
+$MONGODB_URI=mongodb://localhost/5e-database npm run db:refresh
+
+(On Windows)
+  PowerShell:
+    $env:MONDOBU_URI="mongodb://localhost/5e-database"; npm run db:refresh
+   
+   CMD Prompt:
+    set MONGODB_URI=mongodb://localhost/5e-database && npm run db:refresh
 ```
 
 # API Issues
